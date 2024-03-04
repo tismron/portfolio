@@ -1,8 +1,25 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px ; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
+}
+
+.scroll-watcher{
+    height: 8px;
+    width: 100%;
+    position: fixed;
+    border-radius: 0 1rem 1rem 0;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 166, 255, 0.482);
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+@keyframes scroll-watcher{
+    to{scale: 1 1;}
 }
 
 .logo {
