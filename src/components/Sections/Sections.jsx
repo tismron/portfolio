@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import MySkills from './MySkills';
-import reactLogo from '../../assets/react.svg'
 import animate from './animate';
 import './sections.css';
 
@@ -28,13 +27,13 @@ const Sections = () => {
 const Section = ({title, children}) => {
     return (
         <section className="hidden" key={title}>
-            <div className="content">
+            {/* <div className="content">
                 <h1>{title}</h1>
                 <a href="https://reactjs.org" target="_blank">
                     <img src={reactLogo} className="logo react" alt="React logo" />
                 </a>
+            </div> */}
                 {children}
-            </div>
         </section>
     )
 }

@@ -1,14 +1,26 @@
-import { useEffect, useState } from "react";
+import './Data_Scroller.css'
+import data from './scrollerData';
+import { useState } from 'react';
 
 const Scroller = (props) => {
-    const { data, direction } = props;
+    const { direction, setModal, Modal } = props;
+    const { scrollerData, modalData } = data;
+
+    Modal.visible === true ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto";
+
+    const showModal = (e) => {
+        const content = modalData[e.target.innerText.toLowerCase()];
+        setModal({visible: true, content});
+    }
 
     return (
-        <div className="scroller" data-direction={direction}>
-            <ul className="tag-list scroller_inner">
-                {data.map(tag => <li key={tag}>{tag}</li>)}
-            </ul>
-        </div>
+        <>
+            <div className="scroller" data-direction={direction}>
+                <ul className="tag-list scroller_inner">
+                    {scrollerData.map((tag, index) => <li key={index} onClick={(e) => showModal(e)}>{tag}</li>)}
+                </ul>
+            </div>
+        </>
     )
 }
 
