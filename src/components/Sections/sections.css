@@ -1,14 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Flow+Circular&family=Tilt+Neon&family=Yatra+One&display=swap');
+
 section{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(.9);
+    user-select: none;
 }
 
 /* Home Section */
     #home{
         background-image: url("./src/assets/home.svg");
     }
+
+    #home .content{
+        width: 90svw;
+        height: 90svh;
+        padding: 1rem;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        font-family: "Yatra One", system-ui;
+    }
+
+    #home .content .left{
+        text-align: start;
+        line-height: 3.5rem;
+    }
+
+    #home .content h1{
+        font-size: 4rem;
+    }
+
+    #home .content h2{
+        font-size: 3rem;
+    }
+
+    #home .content p{
+        font-size: 1.5rem;
+        font-style: italic;
+        line-height: 2rem;
+        color: #ffffffaa;
+    }
+
 /* About Section */
     #about{
         background-image: url("./src/assets/about.svg");
