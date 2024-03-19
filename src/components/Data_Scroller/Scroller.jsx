@@ -3,7 +3,7 @@ import data from './scrollerData';
 import { useState } from 'react';
 
 const Scroller = (props) => {
-    const { direction, setModal, Modal } = props;
+    const { specialClass, direction, setModal, Modal } = props;
     const { scrollerData, modalData } = data;
 
     Modal.visible === true ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto";
@@ -15,7 +15,7 @@ const Scroller = (props) => {
 
     return (
         <>
-            <div className="scroller" data-direction={direction}>
+            <div className={`scroller ${specialClass}`} data-direction={direction}>
                 <ul className="tag-list scroller_inner">
                     {scrollerData.map((tag, index) => <li key={index} onClick={(e) => showModal(e)}>{tag}</li>)}
                 </ul>
