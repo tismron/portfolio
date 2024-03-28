@@ -32,6 +32,12 @@
     -webkit-mask: linear-gradient(90deg, transparent, #fff 20%, 80%, transparent);
     mask: linear-gradient(90deg, transparent, #fff 20%, 80%, transparent);
 }
+#about .scroller[data-animated="true"]{
+    overflow: hidden;  
+
+    -webkit-mask: linear-gradient(90deg, transparent, #fff 10%, 90%, transparent);
+    mask: linear-gradient(90deg, transparent, #fff 10%, 90%, transparent);
+}
 .scroller[data-direction="right"]{
     --_animation-direction: reverse;
 }

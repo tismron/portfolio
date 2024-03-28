@@ -2,9 +2,9 @@ const animate = (sections) => {
     const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.parentElement.classList.add("show");
+            entry.target.classList.add("show");
         } else {
-            entry.target.parentElement.classList.remove("show");
+            entry.target.classList.remove("show");
         }
         });
     });

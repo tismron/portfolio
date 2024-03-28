@@ -1,4 +1,4 @@
-const modalData = {
+const skillsModal = {
     'html': {
         title: "HTML",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic similique vel voluptatem magni omnis dolor ut obcaecati ducimus amet qui?",
@@ -36,9 +36,15 @@ const modalData = {
     }
 }
 
-const scrollerData = ["HTML", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java", "Html", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java"]
+const aboutModal = {}
+
+const aboutData = ["https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png"]
+
+const skillsData = ["HTML", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java", "Html", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java"]
 
 export default {
-    scrollerData,
-    modalData,
+    skillsData,
+    aboutData,
+    skillsModal,
+    aboutModal
 }

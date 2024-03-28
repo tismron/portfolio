@@ -11,7 +11,10 @@ const Sections = () => {
     // const [sections, setSections] = useState([<Home/>, <MySkills/>]);
 
     useEffect(() => {
-        const sectionsArray = document.querySelectorAll('section .content')
+        const sectionsArray = document.querySelectorAll('section .animate')
+        sectionsArray.forEach((section) => {
+            section.classList.add('hidden');
+        })
         animate(sectionsArray)
 }, []);
     // const num = ["section 1", "section 2", "section 3", "section 4"];
@@ -34,7 +37,7 @@ const Sections = () => {
 
 const Section = ({section, children}) => {
     return (
-        <section id={section} className="hidden" key={'section'}>
+        <section id={section} key={'section'}>
             {/* <div className="content">
                 <h1>{title}</h1>
                 <a href="https://reactjs.org" target="_blank">

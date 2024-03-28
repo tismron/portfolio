@@ -12,6 +12,21 @@ section{
     #home{
         background-image: url("./src/assets/home.svg");
     }
+    #home .left{
+        padding-right: 1rem;
+    }
+    #home.hidden .right.animate{
+        transition-delay: .8s;
+    }
+    #home .right{
+        max-width: 45svw;
+    }
+    #home .right img{
+        width: 100%;
+        -webkit-box-shadow:0px 10px 39px 10px rgba(255,255,255,0.22);
+        -moz-box-shadow: 0px 10px 39px 10px rgba(255,255,255,0.22);
+        box-shadow: 0px 10px 39px 10px rgba(255,255,255,0.22);
+    }
 
     #home .content{
         width: 90svw;
@@ -44,13 +59,76 @@ section{
         color: #ffffffaa;
     }
 
+.content{
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
 /* About Section */
     #about{
         background-image: url("./src/assets/about.svg");
     }
+    #about .content{
+        width: 90svw;
+        min-height: 100svh;
+        padding: 1rem;
+        gap: 2rem;
+        grid-template-rows: 1fr 1fr;
+        font-family: cursive;
+    }
+    #about .about{
+        width: 90svw;
+        /* height: calc(50svh - 1rem); */
+        min-height: calc(50svh - 1rem);
+        background-color: #005ce6e4;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        -webkit-box-shadow: 0px 0px 10px 5px rgb(0 83 202 / 75%);
+        -moz-box-shadow: 0px 0px 10px 5px rgb(0 83 202 / 75%);
+        box-shadow: 0px 0px 10px 5px rgb(0 83 202 / 75%);
+    }
+    #about .images{
+        display: flex;
+        align-items: center;
+    }
+    #about .images img{
+        max-height: calc(50svh - 1rem);
+    }
+    #about .scroller{
+        max-width: 45vw;
+    }
+    #about .scroller_inner, #about .scroller{
+        padding: 0;
+    }
+
+    #about .text-container{
+        display: grid;
+        text-align: center;
+        align-items: center;
+        padding: 1rem 0;
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
 /* Skills Section */
     #skills{
         background-image: url("./src/assets/skills.svg");
+    }
+    #skills .content{
+        width: 90vw;
+        height: 90svh;
+        padding: 1rem;
+    }
+    #skills .comparison{
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    #skills .skills-container{
+        display: flex;
+        justify-content: center;
     }
 /* Skills Section */
     #projects{
@@ -88,5 +166,5 @@ section{
     } */
 
 @media (prefers-reduced-motion){
-
+    
 }
