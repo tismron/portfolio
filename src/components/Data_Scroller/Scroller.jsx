@@ -3,7 +3,7 @@ import data from './scrollerData';
 import { useState } from 'react';
 
 const Scroller = (props) => {
-    const { specialClass, direction, section, setModal, Modal } = props;
+    const { specialClass, direction, axis, section, setModal, Modal } = props;
     let scrollerData;
     let modalData;
     const isImg = section === "about" ? true : false;
@@ -24,7 +24,7 @@ const Scroller = (props) => {
 
     return (
         <>
-            <div className={`scroller ${specialClass}`} data-direction={direction}>
+            <div className={`scroller ${specialClass} animate`} data-direction={direction} data-axis={axis!==null && axis}>
                 <ul className="tag-list scroller_inner">
                     {isImg ? 
                         scrollerData.map((tag, index) => <img key={index} src={tag} alt=""/>) 

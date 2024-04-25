@@ -117,15 +117,52 @@ section{
     }
     #skills .content{
         width: 90vw;
-        height: 90svh;
+        min-height: 90svh;
         padding: 1rem;
+        display: grid;
+        /* grid-template-columns: 90% 10%; */
+        gap: 1rem;
     }
     #skills .comparison{
         display: grid;
-        text-align: center;
-        align-items: center;
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        min-height: 90vh;
     }
+    #skills .left, #skills .section{
+        padding: 1rem;
+        background-color: #0051b8cc;
+        border-radius: .4rem;
+    }
+    #skills .section.backend{
+        background-color: #292929dc;
+    }
+    #skills .comparison .right{
+        display: grid;
+        grid-template-rows: calc(70% - .5rem) calc(30% - .5rem);
+        gap: 1rem;
+    }
+    #skills .left .text-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: calc(100% - 1rem);
+    }
+    #skills .comparison .element{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding: 1rem;
+        text-align: start;
+    }
+    #skills .backend .element, #skills .section{
+        grid-template-columns: 30% 70%;
+    }
+    #skills .comparison p{
+        font-size: 1.2rem;
+    }
+    #skills img{
+        width: 90%;
+    }
+
     #skills .skills-container{
         display: flex;
         justify-content: center;

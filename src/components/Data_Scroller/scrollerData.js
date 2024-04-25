@@ -40,7 +40,7 @@ const aboutModal = {}
 
 const aboutData = ["https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png", "https://dummyimage.com/540/000940/ffffff.png"]
 
-const skillsData = ["HTML", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java", "Html", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java"]
+const skillsData = ["HTML", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java", "Html", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java", "Html", "CSS", "JavaScript", "React", "Next.js", "MongoDB", "Java"]
 
 export default {
     skillsData,
