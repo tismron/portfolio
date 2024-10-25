@@ -46,15 +46,16 @@ const Skills = () => {
             {/* <h1 className="title">My Skills</h1> */}
             <div className="comparison">
                 <div className="left animate slide">
-                    <h2 className='m-0'>Front End - <span className='px-2 bg-primary border border-primary rounded-3'>User Experience</span></h2>
+                    <h2 className='m-0 pb-3'>Front End - <span className='px-2 bg-primary border border-primary rounded-3'>User Experience</span></h2>
                     <div className="text-container">
                         {elements.front_end.map(({name, img, description}, index)=> (
                             <div className="element" key={index}>
                                 <div className="text">
                                     <h3 className='m-0'>{name}</h3>
+                                    <img className='me-auto my-auto d-none float-end' src={img} alt="" />
                                     <p>{description}</p>
                                 </div>
-                                <img className='ms-auto' src={img} alt="" />
+                                <img className='ms-auto my-auto' src={img} alt="" />
                                 {/* <img className='rounded ms-auto' src="https://dummyimage.com/124x124/000/fff" alt="" /> */}
                             </div>
                         ))}
@@ -63,12 +64,13 @@ const Skills = () => {
                 </div>
                 <div className="right">
                     <div className="section backend animate slide" data-direction="right">
-                        <h2>Back End - <span className="px-2 bg-secondary border border-secondary rounded-3">Server Side</span></h2>
+                        <h2 className='m-0 pb-3'>Back End - <span className="px-2 bg-secondary border border-secondary rounded-3">Server Side</span></h2>
                         <div className="text-container">
                             {elements.back_end.map(({name, img, description}, index)=> (
                                 <div className="element text-end" key={index}>
-                                    <img className={'rounded-circle me-auto' + (index === 0 ? " p-2 bg-light" : "")} src={img} alt="" />
+                                    <img className={'rounded-circle me-auto my-auto' + (index === 0 ? " p-2 bg-light" : "")} src={img} alt="" />
                                     <div className="text">
+                                        <img className={'rounded-circle me-auto my-auto d-none float-start' + (index === 0 ? " p-2 bg-light" : "")} src={img} alt="" />
                                         <h3 className='m-0'>{name}</h3>
                                         <p>{description}</p>
                                     </div>
@@ -78,9 +80,10 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="section d-grid animate slide" data-direction="right">
+                    <img className='me-auto my-auto' src="src/assets/skills/react.svg" alt="" />
                         {/* <h2>Add Ons</h2> */}
-                        <img className='me-auto' src="src/assets/skills/react.svg" alt="" />
-                        <div className="text-end p-3">
+                        <div className="text-end react p-3">
+                            <img className='me-auto d-none my-auto float-start' src="src/assets/skills/react.svg" alt="" />
                             <h3 className='m-0'>React</h3>
                             <p>Open Source JS library for building user interfaces. It simplifies UI development by encapsulating HTML, CSS, and JavaScript logic.</p>
                         </div>

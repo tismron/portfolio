@@ -1,13 +1,14 @@
-import Scroller from "../Data_Scroller/Scroller";
+// import Scroller from "../Data_Scroller/Scroller";
 import { useState } from "react";
 const About = () => {
-    const [Modal, setModal] = useState({visible: false, content: {title: "", content: "", img: ""}});
+    // const [Modal, setModal] = useState({visible: false, content: {title: "", content: "", img: ""}});
     // const props = {specialClass: "about-scroller", section:"about"};
-    const props = {specialClass: "aboutScroller", section: "about", setModal, Modal};
+    // const props = {specialClass: "aboutScroller", section: "about", setModal, Modal};
     return (
         <div className="content">
+            <Python />
             {/* <h1>About Me</h1> */}
-            <div className="about top animate slide">
+            {/* <div className="about top animate slide">
                 <div className="images">
                     <Scroller {...props} direction="right"/>
                 </div>
@@ -22,15 +23,18 @@ const About = () => {
                 <div className="images">
                     <Scroller {...props} direction="left"/>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
 
-const Image = ({img}) => {
-    // const props = {specialClass: "about-scroller", type:"img", data: img};
-    // return <Scroller {...props} direction="right"/>
-    {/* <img src={img} alt="" /> */}
+const Python = () => {
+    return (
+        <div>
+            <iframe src="https://trinket.io/embed/python/66e1eb2f41bf" width="100%" height="600" allowfullscreen></iframe>
+            <iframe src="https://trinket.io/embed/python3/8ba61f01749f" width="100%" height="600" allowfullscreen></iframe>
+        </div>
+    )
 }
 
 export default About

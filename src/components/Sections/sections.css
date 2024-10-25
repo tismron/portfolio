@@ -15,6 +15,9 @@ section{
     #home .left{
         padding-right: 1rem;
     }
+    #home .left .shorter{
+        display: none;
+    }
     #home.hidden .right.animate{
         transition-delay: .8s;
     }
@@ -26,6 +29,9 @@ section{
         -webkit-box-shadow:0px 10px 39px 10px rgba(255,255,255,0.22);
         -moz-box-shadow: 0px 10px 39px 10px rgba(255,255,255,0.22);
         box-shadow: 0px 10px 39px 10px rgba(255,255,255,0.22);
+    }
+    #home img.smaller{
+        display: none;
     }
 
     #home .content{
@@ -72,7 +78,7 @@ section{
     #about .content{
         width: 90svw;
         min-height: 100svh;
-        padding: 1rem;
+        padding: 1rem 0;
         gap: 2rem;
         grid-template-rows: 1fr 1fr;
         font-family: cursive;
@@ -118,7 +124,7 @@ section{
     #skills .content{
         width: 90vw;
         min-height: 90svh;
-        padding: 1rem;
+        padding: 1rem 0;
         display: grid;
         /* grid-template-columns: 90% 10%; */
         gap: 1rem;
@@ -129,10 +135,16 @@ section{
         gap: 1rem;
         min-height: 90vh;
     }
+    .right .section{
+        box-shadow: 0px 0px 8px 3px rgb(41 41 41 / 75%);
+    }
+    #skills .left, .right .section:has(.react){
+        box-shadow: 0px 0px 8px 3px rgb(0 83 202 / 75%);
+    }
     #skills .left, #skills .section{
         padding: 1rem;
         background-color: #0051b8cc;
-        border-radius: .4rem;
+        border-radius: 1rem;
     }
     #skills .section.backend{
         background-color: #292929dc;
@@ -145,7 +157,7 @@ section{
     #skills .left .text-container{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-        height: calc(100% - 1rem);
+        /* height: calc(100% - 1rem); */
     }
     #skills .comparison .element{
         display: grid;
