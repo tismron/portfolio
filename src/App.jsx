@@ -5,6 +5,9 @@ import './App.css'
 function App() {
   const [scrollers, setScrollers] = useState([]);
   
+  console.log("TEST");
+  
+
   useEffect(() => {
     setScrollers(document.querySelectorAll('.scroller'));
   }, [])
