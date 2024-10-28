@@ -3,8 +3,8 @@ import Home from './Home';
 import Skills from './Skills';
 import About from './About';
 import animate from './animate';
-import Projects from './Projects';
 import Contact from './Contact';
+// import Contact from './Contact';
 import './sections.css';
 
 const Sections = () => {
@@ -29,7 +29,7 @@ const Sections = () => {
             <Section section="home"><Home/></Section>
             <Section section="about"><About/></Section>
             <Section section="skills"><Skills/></Section>
-            <Section section="projects"><Projects/></Section>
+            {/* <Section section="projects"><Projects/></Section> */}
             <Section section="contact"><Contact/></Section>
         </>
     )

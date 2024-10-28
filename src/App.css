@@ -57,3 +57,38 @@
 .read-the-docs {
   color: #888;
 }
+
+.docs-container ul{
+  list-style: none;
+}
+.docs-container .tag-list li{
+  padding: 1rem;
+  background-color: #0050b87a;
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.docs-container .tag-list li:hover, .docs-container .tag-list li.active{
+  filter: drop-shadow(0 0 .5em #0050b87a);
+  background-color: #fff;
+  color: #0050b8;
+}
+.docs-container{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+}
+
+.doc-sections ul{
+  display: grid;
+  grid-template-columns:  1fr 1fr; 
+  padding: 1rem 4rem;
+  gap: 1rem;
+}
+/* .doc-sections li{
+  margin: 1rem;
+} */
+
+.docs-options li {
+  cursor: pointer;
+  background-color: #0051b8cc;
+}

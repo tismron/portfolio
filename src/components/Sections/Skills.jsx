@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Scroller from "../Data_Scroller/Scroller"
+// import Scroller from "../Data_Scroller/Scroller"
 import ScrollerModal from '../Data_Scroller/ScrollerModal';
 
 const Skills = () => {
@@ -42,6 +42,7 @@ const Skills = () => {
 
     return (
         <div className="content">
+            <h1>Web Dev Skills</h1>
             {Modal.visible && <ScrollerModal {...props} />}
             {/* <h1 className="title">My Skills</h1> */}
             <div className="comparison">
