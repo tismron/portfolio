@@ -34,7 +34,7 @@ const About = () => {
 const docsAssignments = () => [
     {
         name: "Theoretical Computer Science",
-        url: "https://docs.google.com/document/d/1Dh-uUIPLRauUrvrLGAPP8MovOUyek6QWJIlLcLuoB1Q/edit?usp=sharing"
+        url: "https://docs.google.com/document/d/1-q_eLW555mvrsT_13ehe2Ce-lrVD0UsIf5EIpqt5HvI/edit?usp=sharing"
     },
     {
         name: "Environmental Stewardship and Sustainability",
@@ -58,6 +58,9 @@ const programmingAssignments = () => [
     {
         name: "Student Info System",
         url: "https://trinket.io/embed/python3/8ba61f01749f"
+    }, {
+        name: "Recrusion Pygame",
+        url: "https://trinket.io/embed/python3/2ec811db3830"
     }
 ]
 
