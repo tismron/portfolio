@@ -30,7 +30,7 @@ const Sections = () => {
             <Section section="about"><About/></Section>
             <Section section="skills"><Skills/></Section>
             {/* <Section section="projects"><Projects/></Section> */}
-            <Section section="contact"><Contact/></Section>
+            {/* <Section section="contact"><Contact/></Section> */}
         </>
     )
 }

@@ -10,8 +10,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="right animate slide" data-direction="up">
-                <img className="rounded" src="https://dummyimage.com/600x400/000/fff" alt="..." />
-                <img className="rounded smaller" src="https://dummyimage.com/400x400/000/fff" alt="..." />
+                <img className="rounded" src="./me.png" alt="..." />
+                <img className="rounded smaller" src="./me2.jpg" alt="..." />
+                {/* <img className="rounded" src="https://dummyimage.com/600x400/000/fff" alt="..." />
+                <img className="rounded smaller" src="https://dummyimage.com/400x400/000/fff" alt="..." /> */}
             </div>
         </div>
     )

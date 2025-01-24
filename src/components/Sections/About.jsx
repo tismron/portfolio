@@ -40,14 +40,18 @@ const docsAssignments = () => [
         name: "Environmental Stewardship and Sustainability",
         url: "https://docs.google.com/document/d/1Dh-uUIPLRauUrvrLGAPP8MovOUyek6QWJIlLcLuoB1Q/edit?usp=sharing"
     },
+    // {
+    //     name: "13 - Code Of Ethics",
+    //     url: "https://docs.google.com/document/d/1PbxPoW4QJfx-5dD-LEK9b5J7fWvMmBjME_8wRxdLhc8/edit?usp=sharing"
+    // },
+    // {
+    //     name: "6 - Computer Careers ",
+    //     url: "https://docs.google.com/document/d/1cSQjX6oUE76_YpuHku_BlRyneOJT1tE9yafFprYuAJQ/edit?usp=sharing"
+    // },
     {
-        name: "13 - Code Of Ethics",
-        url: "https://docs.google.com/document/d/1PbxPoW4QJfx-5dD-LEK9b5J7fWvMmBjME_8wRxdLhc8/edit?usp=sharing"
+        name: "66 - Personal Ethics ",
+        url: "https://docs.google.com/document/d/1TAOLZTGn3IrR8HJ9q93UYBXihgD1jwZ4USf2EBypO7g/edit?usp=sharing"
     },
-    {
-        name: "6 - Computer Careers ",
-        url: "https://docs.google.com/document/d/1cSQjX6oUE76_YpuHku_BlRyneOJT1tE9yafFprYuAJQ/edit?usp=sharing"
-    }
 ]
 
 const programmingAssignments = () => [
@@ -55,13 +59,19 @@ const programmingAssignments = () => [
         name: "Number Guessing Game",
         url: "https://trinket.io/embed/python/66e1eb2f41bf"
     },
+    // {
+    //     name: "Student Info System",
+    //     url: "https://trinket.io/embed/python3/8ba61f01749f"
+    // }, 
     {
-        name: "Student Info System",
-        url: "https://trinket.io/embed/python3/8ba61f01749f"
-    }, {
         name: "Recrusion Pygame",
         url: "https://trinket.io/embed/python3/2ec811db3830"
-    }
+    }, 
+    {
+        name: "Group Project - Diddle Jump Chrome Extension",
+        src: "",
+        url: null,
+    }, 
 ]
 
 const Docs = () => {
